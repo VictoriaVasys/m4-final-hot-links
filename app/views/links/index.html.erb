@@ -1,0 +1,13 @@
+<div class="big-center">
+  <h1>The top links of the day.... your hot links!!</h1>
+</div>
+
+<div class="links">
+  <ol>
+    <% @links.each do |link| %>
+      <div class="link">
+        <li><a href="<%= link.url %>"><%= link.url %></a></li>
+      </div>
+    <% end %>
+  </ol>
+</div>

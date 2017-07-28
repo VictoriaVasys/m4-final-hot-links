@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'sprockets-es6'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'faker'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
