@@ -5,4 +5,8 @@ class Link < ApplicationRecord
     Link.all.order(reads: :desc).limit(10)
   end
   
+  def update_reads
+    update(reads: reads + 1)
+  end
+  
 end

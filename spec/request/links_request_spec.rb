@@ -19,4 +19,12 @@ describe "Links request", type: :request do
     expect(links_response[1]["url"]).to eq(links.last.url)
   end
   
+  it "creates a link" do
+    post "/api/v1/links?url=https://www.wunderground.com"
+
+    expect(response).to be_success
+    link = JSON.parse(response.body)
+
+    expect(link["url"]).to eq("https://www.wunderground.com")
+  end
 end
