@@ -4,10 +4,10 @@ class Seed
   end
   
   def generate_links
-    20.times do |i|
+    8.times do |i|
       Link.create!(
         url: Faker::Internet.unique.url,
-        reads: rand(1..20)
+        reads: rand(1..3)
       )
       puts "#{i} link created"
     end
